@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Asia | Wigs On Hand</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white;
+
+    /* WIGS ON HAND BACKGROUND */
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(255,105,180,.20),
+            rgba(0,0,0,.55)
+        ),
+        url("asia5.jpg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   BRIGHT GLOW
+========================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,.35),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(255,215,0,.25),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255,20,147,.25),
+            transparent 40%
+        );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   RAIN
+========================= */
+
+.rain {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 20;
+}
+
+.drop {
+
+    position: absolute;
+
+    top: -120px;
+
+    width: 2px;
+
+    height: 80px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(255,255,255,.9)
+        );
+
+    animation:
+        rainfall linear infinite;
+}
+
+@keyframes rainfall {
+
+    from {
+
+        transform:
+            translateY(-100px)
+            rotate(8deg);
+    }
+
+    to {
+
+        transform:
+            translateY(120vh)
+            rotate(8deg);
+    }
+}
+
+
+/* =========================
+   FIRST PAGE
+========================= */
+
+#intro {
+
+    position: relative;
+
+    z-index: 5;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    backdrop-filter: blur(2px);
+}
+
+
+/* ASIA TITLE */
+
+.asia-title {
+
+    font-size: clamp(
+        4rem,
+        16vw,
+        9rem
+    );
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 5px;
+
+    color: white;
+
+    text-shadow:
+
+        0 0 8px white,
+
+        0 0 20px #ff1493,
+
+        0 0 40px #ff1493,
+
+        0 0 70px gold;
+
+    animation:
+        titleGlow 1.5s
+        infinite alternate;
+}
+
+
+@keyframes titleGlow {
+
+    from {
+
+        text-shadow:
+
+            0 0 10px white,
+
+            0 0 25px #ff1493,
+
+            0 0 45px #ff1493;
+    }
+
+    to {
+
+        text-shadow:
+
+            0 0 20px white,
+
+            0 0 40px gold,
+
+            0 0 80px #ff1493;
+    }
+}
+
+
+.intro-text {
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        2px 2px 7px black;
+}
+
+
+/* =========================
+   MAIN ASIA IMAGE
+========================= */
+
+.main-image {
+
+    width: min(
+        88vw,
+        430px
+    );
+
+    max-height: 60vh;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border:
+        5px solid white;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 0 20px white,
+
+        0 0 45px #ff1493,
+
+        0 0 80px gold;
+
+    animation:
+        photoPulse
+        1.4s
+        infinite alternate;
+
+    transition:
+        .3s;
+}
+
+
+.main-image:hover {
+
+    transform:
+        scale(1.05);
+}
+
+
+@keyframes photoPulse {
+
+    from {
+
+        transform:
+            scale(1);
+    }
+
+    to {
+
+        transform:
+            scale(1.035);
+    }
+}
+
+
+/* CLICK MESSAGE */
+
+.click-message {
+
+    margin-top: 25px;
+
+    padding:
+        14px 25px;
+
+    border-radius:
+        40px;
+
+    background:
+        rgba(0,0,0,.65);
+
+    border:
+        2px solid white;
+
+    font-size:
+        1.05rem;
+
+    font-weight:
+        bold;
+
+    box-shadow:
+        0 0 20px
+        rgba(255,255,255,.6);
+
+    animation:
+        messageGlow
+        1s
+        infinite alternate;
+}
+
+
+@keyframes messageGlow {
+
+    from {
+
+        box-shadow:
+            0 0 10px white;
+    }
+
+    to {
+
+        box-shadow:
+            0 0 30px
+            #ff1493;
+    }
+}
+
+
+/* =========================
+   WEBSITE AFTER CLICK
+========================= */
+
+#website {
+
+    display: none;
+
+    position: relative;
+
+    z-index: 5;
+
+    min-height: 100vh;
+
+    padding:
+
+        60px 20px
+        100px;
+
+    text-align: center;
+}
+
+
+#website.show {
+
+    display: block;
+
+    animation:
+        revealSite
+        1.2s ease;
+}
+
+
+@keyframes revealSite {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(50px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================
+   WEBSITE HEADER
+========================= */
+
+.website-title {
+
+    font-size:
+        clamp(
+            3rem,
+            12vw,
+            7rem
+        );
+
+    font-weight:
+        900;
+
+    color:
+        white;
+
+    text-shadow:
+
+        0 0 10px white,
+
+        0 0 30px #ff1493,
+
+        0 0 60px gold;
+
+    margin-bottom:
+        10px;
+}
+
+
+.wigs-title {
+
+    font-size:
+        clamp(
+            1.8rem,
+            7vw,
+            3.5rem
+        );
+
+    color:
+        gold;
+
+    margin-bottom:
+        15px;
+
+    text-shadow:
+
+        2px 2px 5px black,
+
+        0 0 20px gold;
+}
+
+
+.description {
+
+    width:
+        min(
+            90%,
+            650px
+        );
+
+    margin:
+        0 auto 40px;
+
+    padding:
+        18px;
+
+    background:
+        rgba(0,0,0,.65);
+
+    border-radius:
+        20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.6);
+
+    font-size:
+        1.1rem;
+
+    line-height:
+        1.6;
+
+    box-shadow:
+        0 0 20px
+        rgba(255,255,255,.25);
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+
+    width:
+        min(
+            100%,
+            1050px
+        );
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(
+                240px,
+                1fr
+            )
+        );
+
+    gap:
+        28px;
+}
+
+
+.photo-card {
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            .65
+        );
+
+    padding:
+        10px;
+
+    border-radius:
+        25px;
+
+    border:
+        2px solid
+        rgba(
+            255,
+            255,
+            255,
+            .75
+        );
+
+    backdrop-filter:
+        blur(7px);
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(0,0,0,.5),
+
+        0 0 20px
+        rgba(255,20,147,.35);
+
+    transition:
+        .35s;
+}
+
+
+.photo-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.7),
+
+        0 0 35px
+        #ff1493;
+}
+
+
+.photo-card img {
+
+    width:
+        100%;
+
+    height:
+        360px;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+
+    border-radius:
+        18px;
+}
+
+
+/* =========================
+   WIG IMAGE SPECIAL CARD
+========================= */
+
+.wig-card {
+
+    grid-column:
+        1 / -1;
+
+    max-width:
+        750px;
+
+    margin:
+        20px auto;
+
+    width:
+        100%;
+}
+
+
+.wig-card img {
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+    object-fit:
+        contain;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top:
+        60px;
+
+    padding:
+        25px;
+
+    background:
+        rgba(0,0,0,.65);
+
+    border-radius:
+        25px;
+
+    font-size:
+        1rem;
+
+    box-shadow:
+        0 0 25px
+        rgba(255,255,255,.25);
+}
+
+
+/* =========================
+   YOUTUBE PLAYER
+========================= */
+
+#musicPlayer {
+
+    position:
+        fixed;
+
+    width:
+        1px;
+
+    height:
+        1px;
+
+    opacity:
+        0;
+
+    pointer-events:
+        none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (
+    max-width: 600px
+) {
+
+    body {
+
+        background-attachment:
+            scroll;
+    }
+
+
+    .gallery {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .photo-card img {
+
+        height:
+            auto;
+
+        max-height:
+            650px;
+    }
+
+
+    .wig-card {
+
+        grid-column:
+            auto;
+    }
+
+
+    .asia-title {
+
+        letter-spacing:
+            2px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================
+     RAIN
+===================== -->
+
+<div
+class="rain"
+id="rain">
+</div>
+
+
+
+<!-- =====================
+     FIRST SCREEN
+===================== -->
+
+<section
+id="intro">
+
+
+<h1
+class="asia-title">
+
+ASIA
+
+</h1>
+
+
+<p
+class="intro-text">
+
+✨ Beauty • Confidence • Luxury ✨
+
+</p>
+
+
+<!-- CLICK THIS PHOTO -->
+
+<img
+
+src="asia1.jpg"
+
+alt="Asia"
+
+class="main-image"
+
+onclick="enterWebsite()"
+
+>
+
+
+<div
+class="click-message">
+
+💖 CLICK ASIA TO ENTER & PLAY MUSIC 💖
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================
+     MAIN WEBSITE
+===================== -->
+
+<section
+id="website">
+
+
+<h1
+class="website-title">
+
+ASIA 💖
+
+</h1>
+
+
+<h2
+class="wigs-title">
+
+WIGS ON HAND
+
+</h2>
+
+
+<div
+class="description">
+
+✨ Pretty Hair Intentions ✨
+
+<br><br>
+
+Luxury hair, confidence,
+beauty and style.
+
+<br>
+
+💕 Ready For You 💕
+
+</div>
+
+
+
+<!-- =====================
+     GALLERY
+===================== -->
+
+<div
+class="gallery">
+
+
+<!-- ASIA 2 -->
+
+<div
+class="photo-card">
+
+<img
+
+src="asia2.jpg"
+
+alt="Asia Photo 2"
+
+>
+
+</div>
+
+
+
+<!-- ASIA 3 -->
+
+<div
+class="photo-card">
+
+<img
+
+src="asia3.jpg"
+
+alt="Asia Photo 3"
+
+>
+
+</div>
+
+
+
+<!-- ASIA 4 -->
+
+<div
+class="photo-card">
+
+<img
+
+src="asia4.jpg"
+
+alt="Asia Photo 4"
+
+>
+
+</div>
+
+
+
+<!-- ASIA 5 -->
+
+<div
+class="photo-card">
+
+<img
+
+src="asia5.jpg"
+
+alt="Asia Photo 5"
+
+>
+
+</div>
+
+
+
+<!-- ASIA 6 -->
+
+<div
+class="photo-card">
+
+<img
+
+src="asia6.jpg"
+
+alt="Asia Photo 6"
+
+>
+
+</div>
+
+
+
+<!-- WIGS ON HAND PRICE IMAGE -->
+
+<div
+class="photo-card wig-card">
+
+<img
+
+src="asia5.jpg.png"
+
+alt="Wigs On Hand Price List"
+
+>
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+💎 WIGS ON HAND 💎
+
+<br><br>
+
+Luxury Hair • Beauty • Confidence
+
+</footer>
+
+
+</section>
+
+
+
+<!-- =====================
+     YOUTUBE MUSIC
+===================== -->
+
+<iframe
+
+id="musicPlayer"
+
+src=""
+
+title="Asia Music"
+
+allow="
+autoplay;
+encrypted-media
+"
+
+allowfullscreen>
+
+</iframe>
+
+
+
+<script>
+
+/* =========================
+   CLICK ASIA
+   PLAY MUSIC
+   OPEN WEBSITE
+========================= */
+
+function enterWebsite() {
+
+    const player =
+        document.getElementById(
+            "musicPlayer"
+        );
+
+
+    /* QUEEN NAIJA SONG */
+
+    player.src =
+        "https://www.youtube.com/embed/dc89yyOS0Z8?autoplay=1&playsinline=1";
+
+
+    /* REMOVE INTRO */
+
+    document
+        .getElementById(
+            "intro"
+        )
+        .style
+        .display =
+        "none";
+
+
+    /* SHOW WEBSITE */
+
+    document
+        .getElementById(
+            "website"
+        )
+        .classList
+        .add(
+            "show"
+        );
+
+
+    /* MOVE TO TOP */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior:
+            "smooth"
+
+    });
+
+}
+
+
+
+/* =========================
+   CREATE RAIN
+========================= */
+
+const rain =
+    document
+    .getElementById(
+        "rain"
+    );
+
+
+for (
+    let i = 0;
+    i < 100;
+    i++
+) {
+
+    const drop =
+        document
+        .createElement(
+            "div"
+        );
+
+
+    drop.className =
+        "drop";
+
+
+    drop.style.left =
+        Math.random()
+        * 100
+        + "vw";
+
+
+    drop.style
+        .animationDuration =
+        (
+            Math.random()
+            * .8
+            + .45
+        )
+        + "s";
+
+
+    drop.style
+        .animationDelay =
+        (
+            Math.random()
+            * 3
+        )
+        + "s";
+
+
+    drop.style.opacity =
+        Math.random()
+        * .8
+        + .2;
+
+
+    drop.style.height =
+        (
+            Math.random()
+            * 70
+            + 30
+        )
+        + "px";
+
+
+    rain.appendChild(
+        drop
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
